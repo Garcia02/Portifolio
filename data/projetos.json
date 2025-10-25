@@ -6,7 +6,7 @@
             "descricao": "Site portfólio responsivo desenvolvido com HTML, CSS e JavaScript puro, com tema claro/escuro e design moderno.",
             "descricaoCompleta": "Este projeto é meu portfólio profissional desenvolvido do zero utilizando apenas HTML5, CSS3 e JavaScript vanilla. O objetivo foi criar uma plataforma para showcasing de projetos e artigos técnicos, com foco em performance, acessibilidade e experiência do usuário. O site conta com sistema de temas (claro/escuro) com persistência em localStorage, filtros dinâmicos por categoria, busca em tempo real, e design totalmente responsivo que se adapta a diferentes dispositivos. Inclui imagens de fundo personalizadas para cada tema, integração com Font Awesome para ícones profissionais, e animações suaves. O projeto demonstra meu conhecimento em desenvolvimento frontend moderno, boas práticas de acessibilidade (WCAG 2.1), SEO otimizado e performance.",
             "imagem": "./assets/img/screenshot-portifolio.png",
-            "data": "2024",
+            "data": "2025",
             "categoria": "Web",
             "status": "Concluído",
             "tecnologias": [
