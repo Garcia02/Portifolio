@@ -48,86 +48,38 @@ Este projeto foi construído utilizando as seguintes tecnologias e linguagens:
 
 A estrutura de arquivos do projeto é organizada para clareza e manutenção:
 
+<pre><code>
 Portifolio/
-├── index.html # Página inicial
-├── sobre.html # Página "Sobre Mim"
-├── projetos.html # Página listando todos os projetos
-├── artigos.html # Página listando todos os artigos
-├── projeto-detalhes.html # Template para detalhes de um projeto específico
-├── artigo-detalhes.html # Template para detalhes de um artigo específico
-├── assets/ # Recursos estáticos
-│ ├── css/ # Folhas de estilo CSS
-│ │ └── styles.css # Estilos globais e de componentes
-│ ├── js/ # Scripts JavaScript
-│ │ ├── main.js # Lógica global, tema, navegação
-│ │ ├── projetos.js # Lógica específica para a página de projetos
-│ │ ├── artigos.js # Lógica específica para a página de artigos
-│ │ ├── projeto-detalhes.js # Lógica para carregar detalhes de um projeto
-│ │ └── artigo-detalhes.js # Lógica para carregar detalhes de um artigo
-│ ├── img/ # Imagens do projeto
-│ │ ├── hero-bg-dark.jpg # Imagem de fundo para tema escuro
-│ │ ├── hero-bg-light.jpg # Imagem de fundo para tema claro
-│ │ ├── publicacao-penske-direto.png # Exemplo de imagem de projeto
-│ │ ├── minhaFoto.jpg # Foto de perfil
-│ │ ├── placeholder.png # Imagem placeholder
-│ │ └── logo/ # Ícones do site
-│ │ ├── android-chrome-192x192.png # Ícone para Android
-│ │ └── favicon-32x32.png # Favicon
-│ └── data/ # Dados em formato JSON
-│ ├── projetos.json # Dados de todos os projetos
-│ └── artigos.json # Dados de todos os artigos
-├── README.md # Este arquivo
-└── LICENSE # Informações de licença
-
-
----
-
-### ⚙️ Como Instalar e Configurar Localmente
-
-Para rodar este portfólio em sua máquina local, siga os passos abaixo:
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/jeferson-garcia/seu-portfolio.git
-    cd seu-portfolio
-    ```
-    (Substitua `https://github.com/jeferson-garcia/seu-portfolio.git` pelo URL real do seu repositório, se for diferente.)
-
-2.  **Abra o projeto:**
-    Como este projeto é puramente estático (HTML, CSS, JS), você pode abri-lo diretamente em seu navegador.
-    *   No explorador de arquivos, localize o arquivo `index.html` e abra-o com seu navegador preferido.
-
-    **Alternativamente, para uma experiência de desenvolvimento mais robusta (e para garantir que requisições JSON funcionem corretamente em alguns ambientes), você pode usar um servidor web local simples:**
-
-    *   **Com Node.js (recomendado):**
-        Se você tem Node.js instalado, pode instalar um servidor http simples:
-        ```bash
-        npm install -g http-server
-        ```
-        Então, no diretório raiz do projeto (`Portifolio/`), execute:
-        ```bash
-        http-server
-        ```
-        Isso iniciará um servidor em `http://localhost:8080` (ou outra porta disponível).
-
-    *   **Com Python:**
-        Se você tem Python instalado, pode usar o módulo `http.server`:
-        ```bash
-        python -m http.server 8000
-        ```
-        Isso iniciará um servidor em `http://localhost:8000`.
-
----
-
-### 🧭 Como Usar
-
-A navegação no portfólio é intuitiva:
-
-1.  **Página Inicial (`index.html`):** Oferece uma visão geral, destacando projetos e artigos recentes, além de um CTA para contato.
-2.  **Sobre (`sobre.html`):** Detalhes sobre minha trajetória profissional, habilidades, experiência e formação.
-3.  **Projetos (`projetos.html`):** Explore todos os projetos. Use os filtros por categoria e a busca em tempo real para encontrar o que procura. Clique em um projeto para ver seus detalhes.
-4.  **Artigos (`artigos.html`):** Leia meus artigos. Assim como na seção de projetos, você pode filtrar e buscar. Clique em um artigo para ler o conteúdo completo.
-5.  **Alternar Tema:** No cabeçalho (header) do site, há um botão para alternar entre os temas claro e escuro. Sua preferência será salva automaticamente para futuras visitas.
+├── index.html                  # Página inicial
+├── sobre.html                  # Página "Sobre Mim"
+├── projetos.html               # Página listando todos os projetos
+├── artigos.html                # Página listando todos os artigos
+├── projeto-detalhes.html       # Template para detalhes de um projeto específico
+├── artigo-detalhes.html        # Template para detalhes de um artigo específico
+├── assets/                     # Recursos estáticos
+│   ├── css/                    # Folhas de estilo CSS
+│   │   └── styles.css          # Estilos globais e de componentes
+│   ├── js/                     # Scripts JavaScript
+│   │   ├── main.js             # Lógica global, tema, navegação
+│   │   ├── projetos.js         # Lógica específica para a página de projetos
+│   │   ├── artigos.js          # Lógica específica para a página de artigos
+│   │   ├── projeto-detalhes.js # Lógica para carregar detalhes de um projeto
+│   │   └── artigo-detalhes.js  # Lógica para carregar detalhes de um artigo
+│   ├── img/                    # Imagens do projeto
+│   │   ├── hero-bg-dark.jpg    # Imagem de fundo para tema escuro
+│   │   ├── hero-bg-light.jpg   # Imagem de fundo para tema claro
+│   │   ├── publicacao-penske-direto.png # Exemplo de imagem de projeto
+│   │   ├── minhaFoto.jpg       # Foto de perfil
+│   │   ├── placeholder.png     # Imagem placeholder
+│   │   └── logo/               # Ícones do site
+│   │       ├── android-chrome-192x192.png # Ícone para Android
+│   │       └── favicon-32x32.png         # Favicon
+│   └── data/                   # Dados em formato JSON
+│       ├── projetos.json       # Dados de todos os projetos
+│       └── artigos.json        # Dados de todos os artigos
+├── README.md                   # Este arquivo
+└── LICENSE                     # Informações de licença
+</code></pre>
 
 ---
 
@@ -165,35 +117,6 @@ A navegação no portfólio é intuitiva:
 
 ---
 
-### 📄 Páginas Disponíveis
-
-*   **Home (`index.html`):** Visão geral, hero section, projetos e artigos em destaque, call to action.
-*   **Sobre (`sobre.html`):** Perfil profissional, história, habilidades técnicas e comportamentais, experiência (timeline), formação, certificações, interesses e abordagem com IA.
-*   **Projetos (`projetos.html`):** Grid de projetos com filtros por categoria e busca em tempo real.
-*   **Artigos (`artigos.html`):** Grid de artigos com filtros por categoria e busca em tempo real.
-
----
-
-### 📊 Estrutura de Dados (JSON)
-
-Para gerenciar o conteúdo de projetos e artigos de forma flexível, utilizei arquivos JSON:
-
-*   **`assets/data/projetos.json`:** Contém um array de objetos, onde cada objeto representa um projeto com campos como `id`, `titulo`, `descricao`, `imagem`, `link`, `categorias`, etc.
-*   **`assets/data/artigos.json`:** Similarmente, contém um array de objetos para artigos, com campos como `id`, `titulo`, `data`, `autor`, `resumo`, `conteudo`, `tags`, etc.
-
-Essa abordagem permite adicionar, editar ou remover projetos e artigos sem a necessidade de modificar o código HTML diretamente, tornando o portfólio mais dinâmico e fácil de manter.
-
----
-
-### 🤝 Contribuindo
-
-Este é um portfólio pessoal, mas sugestões e feedback são sempre bem-vindos! Se você encontrar um bug, tiver uma ideia para uma melhoria ou quiser oferecer feedback, sinta-se à vontade para:
-
-1.  Abrir uma `Issue` neste repositório.
-2.  Entrar em contato diretamente (veja a seção "Autor/Contato").
-
----
-
 ### 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
@@ -209,4 +132,3 @@ Desenvolvido com dedicação por **Jeferson Garcia**.
 *   **Email:** [jeferson.garcia@email.com](mailto:jeferson.garcia@email.com)
 
 Sinta-se à vontade para entrar em contato para oportunidades de trabalho, colaborações ou apenas para trocar ideias!
-
