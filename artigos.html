@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artigos sobre desenvolvimento web, automação, Excel, VBA e tecnologia por Jeferson Garcia.">
+    <title>Artigos - Jeferson Garcia | Portfólio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/logo/favicon-32x32.png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav aria-label="Navegação principal">
+            <div class="logo"><i class="fas fa-briefcase"></i> Portfólio</div>
+            
+            <button 
+                class="mobile-menu-toggle" 
+                id="mobile-menu-toggle"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="sobre.html"><i class="fas fa-user"></i> Sobre</a></li>
+                <li><a href="projetos.html"><i class="fas fa-folder-open"></i> Projetos</a></li>
+                <li><a href="artigos.html"><i class="fas fa-newspaper"></i> Artigos</a></li>
+                <li>
+                    <button 
+                        class="theme-toggle" 
+                        id="theme-toggle"
+                        aria-label="Alternar tema claro/escuro">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="articles-title">
+            <h1 id="articles-title"><i class="fas fa-newspaper"></i> Meus Artigos</h1>
+            <p>Compartilhando conhecimento sobre desenvolvimento, automação e tecnologia</p>
+        </section>
+
+        <!-- Filtros e Busca -->
+        <section class="filters-container" aria-label="Filtros e busca de artigos">
+            <label for="search-input" class="sr-only">Buscar artigos</label>
+            <input 
+                type="search" 
+                id="search-input" 
+                class="search-box" 
+                placeholder="🔍 Buscar artigos..."
+                aria-label="Campo de busca de artigos"
+            >
+            
+            <div class="filter-buttons" role="group" aria-label="Filtros de categoria">
+                <button class="filter-btn active" data-filter="todos" aria-pressed="true">
+                    <i class="fas fa-list"></i> Todos
+                </button>
+                <!-- Outros filtros serão adicionados dinamicamente -->
+            </div>
+        </section>
+
+        <!-- Grid de Artigos -->
+        <section class="section" aria-label="Lista de artigos">
+            <div class="cards-grid" id="articles-container">
+                <!-- Artigos serão carregados aqui via JavaScript -->
+                <div class="loading" role="status">
+                    <span>Carregando artigos</span>
+                    <span class="sr-only">Carregando lista de artigos...</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Jeferson Garcia de Lima. Todos os direitos reservados.</p>
+            <div class="social-links" aria-label="Links de redes sociais">
+                <a href="https://github.com/Garcia02" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jeferson-garcia-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88%F0%9F%92%BB%F0%9F%8C%90-315270b0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/jefersongarcia.l/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:jeferson.garka@outlook.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/5515998465339" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/artigos.js"></script>
+</body>
+</html>

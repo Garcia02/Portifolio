@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jeferson Garcia - Desenvolvedor e Analista criando automações que economizam milhares de horas. Especialista em Excel, VBA e JavaScript.">
+    <meta name="keywords" content="desenvolvedor, automação, logística, excel, vba, javascript, análise de dados">
+    <meta name="author" content="Jeferson Garcia de Lima">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jeferson Garcia - Desenvolvedor & Analista de Sistemas">
+    <meta property="og:description"
+        content="Criando automações que economizam milhares de horas. Especialista em soluções para logística e transporte.">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jeferson Garcia - Desenvolvedor & Analista">
+
+    <title>Jeferson Garcia | Desenvolvedor & Analista de Sistemas</title>
+
+    <!-- Preconnect para fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/logo/favicon-32x32.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav aria-label="Navegação principal">
+            <div class="logo"><i class="fas fa-briefcase"></i> Portfólio</div>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menu de navegação"
+                aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="sobre.html"><i class="fas fa-user"></i> Sobre</a></li>
+                <li><a href="projetos.html"><i class="fas fa-folder-open"></i> Projetos</a></li>
+                <li><a href="artigos.html"><i class="fas fa-newspaper"></i> Artigos</a></li>
+                <li>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <!-- Logo grande -->
+            <div class="hero-logo">
+                <img src="./assets/img/logo/android-chrome-192x192.png" alt="Logo Jeferson Garcia">
+            </div>
+
+            <h1 id="hero-title">Olá, eu sou Jeferson Garcia <i class="fas fa-hand-wave"></i></h1>
+            <p>Desenvolvedor e Analista: criando automações que economizam milhares de horas</p>
+            <div class="cta-buttons">
+                <a href="projetos.html" class="btn btn-primary">
+                    <i class="fas fa-folder-open"></i> Ver Projetos
+                </a>
+                <a href="sobre.html" class="btn btn-secondary">
+                    <i class="fas fa-user"></i> Sobre Mim
+                </a>
+            </div>
+        </section>
+
+        <!-- Projetos em Destaque -->
+        <section class="section" aria-labelledby="featured-projects-title">
+            <h2 id="featured-projects-title" class="section-title">
+                <i class="fas fa-star"></i> Projetos em Destaque
+            </h2>
+            <div class="cards-grid" id="featured-projects">
+                <!-- Projetos serão carregados aqui via JavaScript -->
+                <div class="loading" role="status">
+                    <span>Carregando projetos</span>
+                    <span class="sr-only">Carregando projetos em destaque...</span>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="projetos.html" class="btn btn-primary">
+                    Ver Todos os Projetos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Artigos Recentes -->
+        <section class="section" aria-labelledby="recent-articles-title">
+            <h2 id="recent-articles-title" class="section-title">
+                <i class="fas fa-newspaper"></i> Artigos Recentes
+            </h2>
+            <div class="cards-grid" id="recent-articles">
+                <!-- Artigos serão carregados aqui via JavaScript -->
+                <div class="loading" role="status">
+                    <span>Carregando artigos</span>
+                    <span class="sr-only">Carregando artigos recentes...</span>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="artigos.html" class="btn btn-primary">
+                    Ver Todos os Artigos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="hero" aria-labelledby="cta-title">
+            <h2 id="cta-title"><i class="fas fa-handshake"></i> Vamos Trabalhar Juntos?</h2>
+            <p>Estou aberto a projetos, mentorias, oportunidades de aprendizado e também ofereço serviços de automação em excel
+            </p>
+
+            <!-- Dois grupos de botões -->
+            <div class="cta-section">
+                <!-- Oportunidades -->
+                <div class="cta-group">
+                    <h3><i class="fas fa-rocket"></i> Oportunidades</h3>
+                    <p>Desenvolvimento web, mobile, freelance</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:jeferson.garka@outlook.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Entre em Contato
+                        </a>
+                        <a href="https://github.com/Garcia02" class="btn btn-secondary" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Ver Projetos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviços -->
+                <div class="cta-group">
+                    <h3><i class="fas fa-file-excel"></i> Serviços de Automação</h3>
+                    <p>Controles em Excel, VBA, Power Query e dashboards</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/5515998465339?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20automação%20em%20Excel"
+                            class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+                        </a>
+                        <a href="mailto:jeferson.garka@outlook.com?subject=Interesse%20em%20Serviços%20de%20Automação%20Excel"
+                            class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Enviar Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Jeferson Garcia de Lima (GARKA). Todos os direitos reservados.</p>
+            <div class="social-links" aria-label="Links de redes sociais">
+                <a href="https://github.com/Garcia02" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jeferson-garcia-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88%F0%9F%92%BB%F0%9F%8C%90-315270b0/"
+                    target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/jefersongarcia.l/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:jeferson.garka@outlook.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/5515998465339" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Carregar projetos em destaque
+        async function loadFeaturedProjects() {
+            const container = document.getElementById('featured-projects');
+
+            if (!container) {
+                console.error('Container de projetos não encontrado');
+                return;
+            }
+
+            try {
+                const response = await fetch('./data/projetos.json');
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                const featuredProjects = data.projetos.slice(0, 3);
+
+                if (featuredProjects.length === 0) {
+                    container.innerHTML = '<p class="no-results">Nenhum projeto disponível no momento.</p>';
+                    return;
+                }
+
+                container.innerHTML = featuredProjects.map(project => `
+                    <article class="card fade-in">
+                        <img 
+                            src="${project.imagem}" 
+                            alt="${project.titulo}"
+                            class="card-image"
+                            loading="lazy"
+                            onerror="this.src='./assets/img/placeholder.png'"
+                        >
+                        <h3 class="card-title">${project.titulo}</h3>
+                        <p class="card-description">${project.descricao}</p>
+                        <div class="card-tags">
+                            ${project.tecnologias.slice(0, 3).map(tech =>
+                    `<span class="tag">${tech}</span>`
+                ).join('')}
+                        </div>
+                        <a href="projeto-detalhes.html?id=${project.id}" 
+                           class="btn btn-primary mt-3"
+                           aria-label="Ver detalhes do projeto ${project.titulo}">
+                            Ver Detalhes <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                `).join('');
+
+                console.log('✅ Projetos carregados com sucesso!');
+
+            } catch (error) {
+                console.error('❌ Erro ao carregar projetos:', error);
+                container.innerHTML = `
+                    <div class="error-message" role="alert">
+                        <strong>Erro:</strong> Não foi possível carregar os projetos.
+                        <br><small>${error.message}</small>
+                    </div>
+                `;
+            }
+        }
+
+        // Carregar artigos recentes
+        async function loadRecentArticles() {
+            const container = document.getElementById('recent-articles');
+
+            if (!container) {
+                console.error('Container de artigos não encontrado');
+                return;
+            }
+
+            try {
+                const response = await fetch('./data/artigos.json');
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                const recentArticles = data.artigos.slice(0, 3);
+
+                if (recentArticles.length === 0) {
+                    container.innerHTML = '<p class="no-results">Nenhum artigo disponível no momento.</p>';
+                    return;
+                }
+
+                container.innerHTML = recentArticles.map(article => `
+                    <article class="card fade-in">
+                        <img 
+                            src="${article.imagem}" 
+                            alt="${article.titulo}"
+                            class="card-image"
+                            loading="lazy"
+                            onerror="this.src='./assets/img/placeholder.png'"
+                        >
+                        <h3 class="card-title">${article.titulo}</h3>
+                        <p class="card-description">${article.resumo}</p>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> ${article.tempoLeitura}</span>
+                        </div>
+                        <a href="artigo-detalhes.html?id=${article.id}" 
+                           class="btn btn-primary mt-3"
+                           aria-label="Ler artigo ${article.titulo}">
+                            Ler Artigo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                `).join('');
+
+                console.log('✅ Artigos carregados com sucesso!');
+
+            } catch (error) {
+                console.error('❌ Erro ao carregar artigos:', error);
+                container.innerHTML = `
+                    <div class="error-message" role="alert">
+                        <strong>Erro:</strong> Não foi possível carregar os artigos.
+                        <br><small>${error.message}</small>
+                    </div>
+                `;
+            }
+        }
+
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🚀 Iniciando carregamento...');
+            loadFeaturedProjects();
+            loadRecentArticles();
+        });
+    </script>
+</body>
+
+</html>

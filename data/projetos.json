@@ -1,0 +1,50 @@
+{
+    "projetos": [
+        {
+            "id": "sistema-controle-processos-penske",
+            "titulo": "Sistema de Controle de Processos Internos",
+            "descricao": "Sistema automatizado desenvolvido em Excel/VBA para controle e gestão de processos de transporte na Penske Logistics. Reconhecido em KAIZEN com economia de 2.488 horas/ano.",
+            "descricaoCompleta": "Sistema completo desenvolvido ao longo de 2 anos (incluindo fins de semana e madrugadas) para automatizar controles internos de transporte na Penske Logistics. O projeto integra múltiplas planilhas, automatiza cálculos complexos de custos, gera relatórios e dashboards em tempo real. Através de pesquisa de campo, mapeei as necessidades de cada usuário e transformei processos manuais em fluxos automatizados. Resultado: economia calculada de 2.488 horas por ano para a equipe, reconhecimento pela filosofia KAIZEN (melhoria contínua) da empresa e destaque no jornal interno (Penske Direto). O sistema continua em produção e recebe melhorias contínuas baseadas no feedback dos usuários.",
+            "imagem": "./assets/img/placeholder.png",
+            "data": "2022 - Presente",
+            "categoria": "Automação",
+            "status": "Em Produção",
+            "tecnologias": ["Excel Avançado", "VBA", "Power Query", "Análise de Dados", "Dashboards"],
+            "desafios": "O maior desafio foi compreender as necessidades específicas de cada usuário através de pesquisa de campo, mapear todos os processos manuais existentes e criar uma solução que fosse intuitiva e eficiente. Além disso, foi necessário garantir a integridade dos dados e criar validações robustas para evitar erros operacionais. Tudo isso desenvolvido de forma voluntária, em paralelo ao trabalho regular.",
+            "aprendizados": "Este projeto foi fundamental para meu desenvolvimento como programador. Aprendi sobre levantamento de requisitos, design de sistemas, tratamento de erros, otimização de performance e, principalmente, a importância do feedback dos usuários. Foi esse projeto que me mostrou minha verdadeira paixão: criar soluções tecnológicas que resolvem problemas reais e agregam valor mensurável.",
+            "links": {
+                "reconhecimento": "https://www.linkedin.com/feed/update/urn:li:activity:7381727347802198016/"
+            }
+        },
+        {
+            "id": "portfolio-pessoal",
+            "titulo": "Portfólio Pessoal",
+            "descricao": "Site portfólio responsivo desenvolvido com HTML, CSS e JavaScript puro, com tema claro/escuro e design moderno.",
+            "descricaoCompleta": "Este projeto é meu portfólio profissional desenvolvido do zero utilizando apenas HTML5, CSS3 e JavaScript vanilla. O objetivo foi criar uma plataforma para showcasing de projetos e artigos técnicos, com foco em performance, acessibilidade e experiência do usuário. O site conta com sistema de temas (claro/escuro) com persistência em localStorage, filtros dinâmicos por categoria, busca em tempo real, e design totalmente responsivo que se adapta a diferentes dispositivos.",
+            "imagem": "./assets/img/placeholder.png",
+            "data": "2024",
+            "categoria": "Web",
+            "status": "Concluído",
+            "tecnologias": ["HTML5", "CSS3", "JavaScript", "JSON", "Git"],
+            "desafios": "Implementar um sistema de filtros e busca eficiente sem utilizar frameworks. A solução envolveu o uso de métodos nativos do JavaScript como filter(), map() e includes(), além de debouncing para otimizar a performance da busca em tempo real.",
+            "aprendizados": "Este projeto consolidou meus conhecimentos em JavaScript vanilla, manipulação do DOM, eventos, localStorage e boas práticas de acessibilidade. Aprendi a importância de código limpo, semântico e bem documentado.",
+            "links": {
+                "github": "https://github.com/Garcia02/portfolio"
+            }
+        },
+        {
+            "id": "dashboard-custos-transporte",
+            "titulo": "Dashboard de Análise de Custos",
+            "descricao": "Dashboard interativo para análise de custos de transporte com gráficos dinâmicos e filtros por período.",
+            "descricaoCompleta": "Dashboard desenvolvido em Excel com VBA para visualização e análise de custos de transporte em tempo real. Utiliza gráficos dinâmicos para criar visualizações interativas e intuitivas. O projeto inclui filtros por período, categoria e região, além de exportação de relatórios automatizados. Ferramenta essencial para tomada de decisões estratégicas na área de transportes.",
+            "imagem": "./assets/img/placeholder.png",
+            "data": "2023 - 2024",
+            "categoria": "Automação",
+            "status": "Concluído",
+            "tecnologias": ["Excel Avançado", "VBA", "Power Query", "Gráficos Dinâmicos"],
+            "desafios": "Integrar múltiplas fontes de dados e garantir que os gráficos sejam atualizados automaticamente sem comprometer a performance. Implementei técnicas de otimização de queries e cache de dados.",
+            "aprendizados": "Aprendi sobre visualização de dados, criação de dashboards eficientes e como criar interfaces que facilitam a tomada de decisões baseadas em dados.",
+            "links": {}
+        }
+    ]
+}

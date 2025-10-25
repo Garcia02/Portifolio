@@ -1,0 +1,105 @@
+{
+    "artigos": [
+        {
+            "id": "introducao-html-semantico",
+            "titulo": "Introdução ao HTML Semântico",
+            "resumo": "Entenda a importância do HTML semântico e como ele melhora a acessibilidade e SEO do seu site.",
+            "imagem": "./assets/img/placeholder.png",
+            "data": "2024-01-15",
+            "tempoLeitura": "8 min",
+            "categoria": "HTML",
+            "tags": ["HTML", "Semântica", "Acessibilidade", "SEO"],
+            "conteudo": "<h2>O que é HTML Semântico?</h2><p>HTML semântico refere-se ao uso de tags HTML que carregam significado sobre o conteúdo que envolvem, não apenas sobre como devem ser apresentadas visualmente. Em vez de usar apenas divs e spans, utilizamos elementos como header, nav, main, article, section, aside e footer.</p><h3>Por que usar HTML Semântico?</h3><ul><li><strong>Acessibilidade:</strong> Leitores de tela e outras tecnologias assistivas dependem da estrutura semântica para navegar e interpretar o conteúdo.</li><li><strong>SEO:</strong> Motores de busca entendem melhor a estrutura e hierarquia do conteúdo.</li><li><strong>Manutenibilidade:</strong> Código mais legível e fácil de manter.</li><li><strong>Consistência:</strong> Padrões claros para toda a equipe.</li></ul><h3>Principais Tags Semânticas</h3><p><strong>&lt;header&gt;:</strong> Cabeçalho da página ou seção<br><strong>&lt;nav&gt;:</strong> Navegação principal<br><strong>&lt;main&gt;:</strong> Conteúdo principal da página<br><strong>&lt;article&gt;:</strong> Conteúdo independente e reutilizável<br><strong>&lt;section&gt;:</strong> Seção temática de conteúdo<br><strong>&lt;aside&gt;:</strong> Conteúdo relacionado ou complementar<br><strong>&lt;footer&gt;:</strong> Rodapé da página ou seção</p><h3>Exemplo Prático</h3><p>Em vez de usar divs genéricos, estruture seu HTML assim:</p><pre><code>&lt;header&gt;\n  &lt;nav&gt;Menu de navegação&lt;/nav&gt;\n&lt;/header&gt;\n&lt;main&gt;\n  &lt;article&gt;\n    &lt;h1&gt;Título do Artigo&lt;/h1&gt;\n    &lt;p&gt;Conteúdo...&lt;/p&gt;\n  &lt;/article&gt;\n&lt;/main&gt;\n&lt;footer&gt;Rodapé&lt;/footer&gt;</code></pre><h3>Conclusão</h3><p>Adotar HTML semântico é uma prática essencial para desenvolvedores modernos. Melhora a experiência de todos os usuários e facilita o trabalho de manutenção do código.</p>",
+            "links": [
+                {
+                    "titulo": "MDN - HTML Semântico",
+                    "url": "https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics"
+                },
+                {
+                    "titulo": "W3C - HTML5 Specification",
+                    "url": "https://www.w3.org/TR/html52/"
+                }
+            ]
+        },
+        {
+            "id": "css-grid-flexbox",
+            "titulo": "CSS Grid vs Flexbox: Quando usar cada um?",
+            "resumo": "Comparação detalhada entre CSS Grid e Flexbox, com exemplos práticos de quando usar cada tecnologia.",
+            "imagem": "./assets/img/placeholder.png",
+            "data": "2024-02-10",
+            "tempoLeitura": "12 min",
+            "categoria": "CSS",
+            "tags": ["CSS", "Grid", "Flexbox", "Layout"],
+            "conteudo": "<h2>Entendendo Grid e Flexbox</h2><p>CSS Grid e Flexbox são duas poderosas ferramentas de layout, mas servem propósitos diferentes e complementares.</p><h3>Flexbox - Layout Unidimensional</h3><p>Flexbox é ideal para layouts em uma única dimensão (linha ou coluna). Use quando precisar:</p><ul><li>Alinhar itens em uma linha ou coluna</li><li>Distribuir espaço entre itens</li><li>Criar navegações horizontais</li><li>Centralizar elementos</li><li>Criar layouts de componentes pequenos</li></ul><h3>CSS Grid - Layout Bidimensional</h3><p>Grid é perfeito para layouts complexos em duas dimensões. Use quando precisar:</p><ul><li>Criar layouts de página completos</li><li>Posicionar elementos em linhas E colunas simultaneamente</li><li>Criar grids responsivos complexos</li><li>Sobrepor elementos facilmente</li></ul><h3>Exemplo Prático: Flexbox</h3><pre><code>.container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 1rem;\n}</code></pre><h3>Exemplo Prático: Grid</h3><pre><code>.container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 2rem;\n}</code></pre><h3>Quando Combinar Ambos</h3><p>Na prática, você frequentemente usará ambos no mesmo projeto: Grid para o layout geral da página e Flexbox para componentes individuais.</p><h3>Conclusão</h3><p>Não é uma questão de escolher um ou outro, mas sim entender quando cada um é mais apropriado. Dominar ambos torna você um desenvolvedor frontend muito mais versátil.</p>",
+            "links": [
+                {
+                    "titulo": "CSS Tricks - A Complete Guide to Flexbox",
+                    "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                },
+                {
+                    "titulo": "CSS Tricks - A Complete Guide to Grid",
+                    "url": "https://css-tricks.com/snippets/css/complete-guide-grid/"
+                }
+            ]
+        },
+        {
+            "id": "javascript-async-await",
+            "titulo": "Dominando Async/Await em JavaScript",
+            "resumo": "Guia completo sobre programação assíncrona em JavaScript usando async/await.",
+            "imagem": "./assets/img/placeholder.png",
+            "data": "2024-03-05",
+            "tempoLeitura": "15 min",
+            "categoria": "JavaScript",
+            "tags": ["JavaScript", "Async", "Promises", "ES6+"],
+            "conteudo": "<h2>Programação Assíncrona em JavaScript</h2><p>JavaScript é single-threaded, mas precisa lidar com operações que levam tempo (requisições HTTP, leitura de arquivos, timers). Async/await torna esse código mais legível.</p><h3>O Problema com Callbacks</h3><p>Antes de Promises e async/await, usávamos callbacks, que levavam ao 'callback hell':</p><pre><code>getData(function(a) {\n  getMoreData(a, function(b) {\n    getEvenMoreData(b, function(c) {\n      // Callback hell!\n    });\n  });\n});</code></pre><h3>Promises: Uma Melhoria</h3><p>Promises tornaram o código mais linear:</p><pre><code>getData()\n  .then(a => getMoreData(a))\n  .then(b => getEvenMoreData(b))\n  .then(c => console.log(c))\n  .catch(error => console.error(error));</code></pre><h3>Async/Await: A Solução Moderna</h3><p>Async/await torna código assíncrono parecer síncrono:</p><pre><code>async function fetchData() {\n  try {\n    const a = await getData();\n    const b = await getMoreData(a);\n    const c = await getEvenMoreData(b);\n    console.log(c);\n  } catch (error) {\n    console.error(error);\n  }\n}</code></pre><h3>Tratamento de Erros</h3><p>Use try/catch para capturar erros em código async/await:</p><pre><code>async function loadUser() {\n  try {\n    const response = await fetch('/api/user');\n    if (!response.ok) {\n      throw new Error('Erro na requisição');\n    }\n    const user = await response.json();\n    return user;\n  } catch (error) {\n    console.error('Erro ao carregar usuário:', error);\n    throw error;\n  }\n}</code></pre><h3>Executando Promises em Paralelo</h3><p>Use Promise.all() para executar múltiplas operações simultaneamente:</p><pre><code>async function loadAllData() {\n  const [users, posts, comments] = await Promise.all([\n    fetch('/api/users').then(r => r.json()),\n    fetch('/api/posts').then(r => r.json()),\n    fetch('/api/comments').then(r => r.json())\n  ]);\n  return { users, posts, comments };\n}</code></pre><h3>Conclusão</h3><p>Async/await é a forma moderna e mais legível de trabalhar com código assíncrono em JavaScript. Dominar esse conceito é essencial para qualquer desenvolvedor JavaScript moderno.</p>",
+            "links": [
+                {
+                    "titulo": "MDN - Async/Await",
+                    "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/async_function"
+                }
+            ]
+        },
+        {
+            "id": "acessibilidade-web",
+            "titulo": "Acessibilidade Web: Guia Prático",
+            "resumo": "Como tornar seus sites acessíveis para todos os usuários, incluindo pessoas com deficiências.",
+            "imagem": "./assets/img/placeholder.png",
+            "data": "2024-03-20",
+            "tempoLeitura": "10 min",
+            "categoria": "Acessibilidade",
+            "tags": ["Acessibilidade", "WCAG", "ARIA", "Inclusão"],
+            "conteudo": "<h2>Por que Acessibilidade é Importante?</h2><p>Acessibilidade web garante que pessoas com deficiências possam usar seus sites. Isso inclui deficiências visuais, auditivas, motoras e cognitivas. Além de ser ético, é também um requisito legal em muitos países.</p><h3>Princípios WCAG</h3><p>As Web Content Accessibility Guidelines (WCAG) definem 4 princípios:</p><ul><li><strong>Perceptível:</strong> Informação deve ser apresentada de forma que usuários possam perceber</li><li><strong>Operável:</strong> Interface deve ser operável por todos</li><li><strong>Compreensível:</strong> Informação e operação devem ser compreensíveis</li><li><strong>Robusto:</strong> Conteúdo deve funcionar com diferentes tecnologias</li></ul><h3>Práticas Essenciais</h3><p><strong>1. Use HTML Semântico</strong></p><pre><code>&lt;button&gt;Clique aqui&lt;/button&gt; ✅\n&lt;div onclick='...'&gt;Clique aqui&lt;/div&gt; ❌</code></pre><p><strong>2. Adicione Alt Text em Imagens</strong></p><pre><code>&lt;img src='logo.png' alt='Logo da Empresa'&gt;</code></pre><p><strong>3. Use Labels em Formulários</strong></p><pre><code>&lt;label for='email'&gt;Email:&lt;/label&gt;\n&lt;input type='email' id='email' name='email'&gt;</code></pre><p><strong>4. Garanta Contraste Adequado</strong></p><p>Texto deve ter contraste mínimo de 4.5:1 com o fundo.</p><p><strong>5. Navegação por Teclado</strong></p><p>Todos os elementos interativos devem ser acessíveis via teclado (Tab, Enter, Space).</p><p><strong>6. Use ARIA quando Necessário</strong></p><pre><code>&lt;button aria-label='Fechar modal'&gt;×&lt;/button&gt;</code></pre><h3>Ferramentas de Teste</h3><ul><li>WAVE (Web Accessibility Evaluation Tool)</li><li>axe DevTools</li><li>Lighthouse (Chrome DevTools)</li><li>Leitores de tela (NVDA, JAWS, VoiceOver)</li></ul><h3>Conclusão</h3><p>Acessibilidade não é um recurso opcional - é uma responsabilidade. Começar com práticas básicas já faz uma grande diferença na vida de milhões de usuários.</p>",
+            "links": [
+                {
+                    "titulo": "WCAG 2.1 Guidelines",
+                    "url": "https://www.w3.org/WAI/WCAG21/quickref/"
+                },
+                {
+                    "titulo": "MDN - Acessibilidade",
+                    "url": "https://developer.mozilla.org/pt-BR/docs/Web/Accessibility"
+                }
+            ]
+        },
+        {
+            "id": "git-github-iniciantes",
+            "titulo": "Git e GitHub para Iniciantes",
+            "resumo": "Aprenda os conceitos básicos de controle de versão com Git e como usar o GitHub.",
+            "imagem": "./assets/img/placeholder.png",
+            "data": "2024-04-01",
+            "tempoLeitura": "14 min",
+            "categoria": "Ferramentas",
+            "tags": ["Git", "GitHub", "Controle de Versão", "DevOps"],
+            "conteudo": "<h2>O que é Git?</h2><p>Git é um sistema de controle de versão distribuído que permite rastrear mudanças no código, colaborar com outros desenvolvedores e manter um histórico completo do projeto.</p><h3>Conceitos Fundamentais</h3><p><strong>Repository (Repositório):</strong> Pasta que contém seu projeto e todo o histórico de mudanças.</p><p><strong>Commit:</strong> Snapshot do seu código em um determinado momento.</p><p><strong>Branch:</strong> Linha independente de desenvolvimento.</p><p><strong>Merge:</strong> Combinar mudanças de diferentes branches.</p><h3>Comandos Essenciais</h3><p><strong>Inicializar um repositório:</strong></p><pre><code>git init</code></pre><p><strong>Clonar um repositório:</strong></p><pre><code>git clone https://github.com/usuario/repo.git</code></pre><p><strong>Verificar status:</strong></p><pre><code>git status</code></pre><p><strong>Adicionar arquivos ao stage:</strong></p><pre><code>git add arquivo.txt\ngit add .  # Adiciona todos os arquivos</code></pre><p><strong>Fazer commit:</strong></p><pre><code>git commit -m 'Mensagem descritiva'</code></pre><p><strong>Ver histórico:</strong></p><pre><code>git log\ngit log --oneline  # Versão compacta</code></pre><p><strong>Criar branch:</strong></p><pre><code>git branch nome-da-branch\ngit checkout -b nome-da-branch  # Cria e muda</code></pre><p><strong>Mudar de branch:</strong></p><pre><code>git checkout nome-da-branch</code></pre><p><strong>Fazer merge:</strong></p><pre><code>git checkout main\ngit merge nome-da-branch</code></pre><h3>Trabalhando com GitHub</h3><p><strong>Adicionar repositório remoto:</strong></p><pre><code>git remote add origin https://github.com/usuario/repo.git</code></pre><p><strong>Enviar mudanças:</strong></p><pre><code>git push origin main</code></pre><p><strong>Baixar mudanças:</strong></p><pre><code>git pull origin main</code></pre><h3>Boas Práticas</h3><ul><li>Faça commits pequenos e frequentes</li><li>Escreva mensagens de commit descritivas</li><li>Use branches para novas features</li><li>Mantenha a branch main sempre estável</li><li>Revise código antes de fazer merge</li></ul><h3>Conclusão</h3><p>Git é uma ferramenta essencial para qualquer desenvolvedor. Dominar os conceitos básicos abre portas para colaboração efetiva e gerenciamento profissional de código.</p>",
+            "links": [
+                {
+                    "titulo": "Git Documentation",
+                    "url": "https://git-scm.com/doc"
+                },
+                {
+                    "titulo": "GitHub Guides",
+                    "url": "https://guides.github.com/"
+                }
+            ]
+        }
+    ]
+}
