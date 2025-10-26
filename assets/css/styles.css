@@ -488,6 +488,77 @@ main {
 }
 
 /* ========================================
+   CTA NOTE - NOTA SOBRE DESENVOLVIMENTO WEB
+   ======================================== */
+
+.cta-note {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-tertiary);
+    border-left: 4px solid var(--accent-primary);
+    border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-note p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.cta-note strong {
+    color: var(--text-primary);
+}
+
+.cta-note i {
+    color: var(--accent-primary);
+    margin-right: 0.5rem;
+}
+
+/* ========================================
+   CTA FOOTER - VAMOS TRABALHAR JUNTOS
+   ======================================== */
+
+.cta-footer {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--bg-tertiary);
+    border-radius: 12px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--border-color);
+}
+
+.cta-footer h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.cta-footer h3 i {
+    color: var(--accent-primary);
+}
+
+.cta-footer p {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.cta-footer .cta-buttons {
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* ========================================
    SEÇÕES
    ======================================== */
 
@@ -1232,6 +1303,14 @@ footer {
         padding: 1.5rem;
     }
 
+    .cta-footer .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-footer .btn {
+        width: 100%;
+    }
+
     .achievement-links {
         flex-direction: column;
     }
@@ -1242,6 +1321,19 @@ footer {
 
     .achievement-img:hover {
         transform: scale(1);
+    }
+
+    .card-iframe-container {
+        height: 150px;
+    }
+    
+    .card-iframe {
+        height: 225px;
+        transform: scale(0.67);
+    }
+    
+    .detail-iframe-container {
+        height: 400px;
     }
 }
 
@@ -1299,12 +1391,37 @@ footer {
         width: 100%;
     }
 
+    .cta-footer {
+        padding: 1.5rem;
+    }
+
+    .cta-footer .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-footer .btn {
+        width: 100%;
+    }
+
     .achievement-links {
         flex-direction: column;
     }
 
     .achievement-links .btn {
         width: 100%;
+    }
+
+    .card-iframe-container {
+        height: 120px;
+    }
+    
+    .card-iframe {
+        height: 180px;
+        transform: scale(0.67);
+    }
+    
+    .detail-iframe-container {
+        height: 300px;
     }
 }
 

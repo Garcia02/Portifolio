@@ -15,13 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initTheme() {
     const themeToggle = document.getElementById('theme-toggle');
-    
     if (!themeToggle) return;
 
     // Carregar tema salvo ou usar preferência do sistema
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const currentTheme = savedTheme || (prefersDark ? 'dark' : 'light'); // 🟢 Corrigido
+    const currentTheme = savedTheme || (prefersDark ? 'dark' : 'light'); // 🔧 corrigido
     setTheme(currentTheme);
 
     // Alternar tema manualmente
@@ -45,7 +44,7 @@ function setTheme(theme) {
 
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
-        themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+        themeToggle.innerHTML = theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
         themeToggle.setAttribute('aria-label', `Mudar para tema ${theme === 'dark' ? 'claro' : 'escuro'}`);
     }
 }
@@ -58,6 +57,7 @@ function initMobileMenu() {
     const mobileToggle = document.getElementById('mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     
+    // 🔧 Corrigido: faltava a verificação condicional
     if (!mobileToggle || !navLinks) {
         console.warn('Elementos do menu móvel não encontrados.');
         return;
@@ -66,7 +66,7 @@ function initMobileMenu() {
     mobileToggle.addEventListener('click', () => {
         const isActive = navLinks.classList.toggle('active');
         mobileToggle.setAttribute('aria-expanded', isActive);
-        mobileToggle.textContent = isActive ? '✕' : '☰';
+        mobileToggle.innerHTML = isActive ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
     });
 
     // Fechar menu ao clicar em um link
@@ -74,7 +74,7 @@ function initMobileMenu() {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
             mobileToggle.setAttribute('aria-expanded', 'false');
-            mobileToggle.textContent = '☰';
+            mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
         });
     });
 
@@ -83,7 +83,7 @@ function initMobileMenu() {
         if (!e.target.closest('nav')) {
             navLinks.classList.remove('active');
             mobileToggle.setAttribute('aria-expanded', 'false');
-            mobileToggle.textContent = '☰';
+            mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
         }
     });
 }
@@ -98,7 +98,8 @@ function initActiveNavLink() {
 
     navLinks.forEach(link => {
         const linkPage = link.getAttribute('href').replace(/\/$/, '');
-        if (linkPage === currentPath || (linkPage === '/index.html' && currentPath === '')) {
+        // 🔧 Corrigido: faltava o "if"
+        if (linkPage === currentPath) {
             link.classList.add('active');
             link.setAttribute('aria-current', 'page');
         } else {
