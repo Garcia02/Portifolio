@@ -116,7 +116,7 @@ function renderProjectDetails(project) {
                        target="_blank" 
                        rel="noopener noreferrer"
                        aria-label="Ver código no GitHub">
-                        <span>Ver no GitHub</span>
+                        <span>Veja detalhes do projeto</span>
                     </a>
                 ` : ''}
                 ${project.links?.demo ? `
